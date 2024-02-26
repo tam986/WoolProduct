@@ -1,0 +1,587 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main-header{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+#header{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-color:#0e1327;
+}
+.namelogo{
+  width: 200px;
+  height: 100px;
+}
+.namelogo h1{
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+
+}
+.namelogo h1 a{
+  color: burlywood;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.namelogo h1:hover a{
+  cursor: pointer;
+  color: blanchedalmond;
+
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  padding: 8px  16px;
+}
+nav li a{
+  color: burlywood;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 12px;
+  padding: 8px;
+}
+nav li:hover a{
+  color:  blanchedalmond;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.end{
+  width: 600px;
+  height: 100px;
+
+}
+.tablist{
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+
+}
+.tablist li{
+  list-style: none;
+  display: inline-block;
+
+  padding: 8px  16px;
+}
+.tablist li a{
+  text-decoration: none;
+  color: burlywood;
+  font-size: 24px;
+  margin: 2px;
+}
+.tablist>li:hover>a{
+  color:   blanchedalmond;
+}
+
+
+.li-nav-child{
+  color: burlywood;
+  cursor: pointer;
+  position: relative;
+}
+.li-nav-child .fa-user{
+  font-size: 24px;
+}
+#logout-nav{
+  position: absolute;
+  width: 150px;
+  display: none;
+  text-align: center;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+#logout-nav .logout-li .logout{
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+
+}
+#logout-nav .logout-li,
+ #logout-nav .user-value{
+  width: 100%;
+  border-radius: 5px;
+}
+#logout-nav:hover{
+  background-color:rgba(222, 184, 135, 0.733);
+}
+#logout-nav .logout-li .logout:hover{
+  color:#fff;
+  
+}
+#logout-nav .logout-li:hover, #logout-nav .user-value:hover{
+  background-color: blanchedalmond;
+}
+#quantity{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 10px;
+  border: 1px solid brown;
+  border-radius: 100%;
+  color: #fff;
+  background-color: brown;
+  align-items: center;
+  text-align: center;
+}
+/* slider */
+section.content1{
+  width: 100%;
+  height: 800px;
+      background-color: #0e1327;
+
+}
+.slider{
+  width: 100%;
+  height: 100% ;
+  border-radius: 10px;
+}
+.slider img{
+  width: calc(100% - 25px);
+  height: 100%;
+  margin: 10px;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 7px 29px 0px #000 ;
+}
+.slider .click-slide{
+  position: absolute;
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 50px;
+  margin: -300px 10px 0px 15px; 
+}
+.click-slide i{
+ display: none;
+  color:burlywood;
+
+}
+.click-slide i:hover{
+  color: blanchedalmond;
+  cursor: pointer;
+}
+/* end slider */
+/* title */
+.title{
+  width: 100%;
+  height: 200px;
+    background-color: #0e1327;
+}
+.h1-title{
+width:100%;
+height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.box-h1-title{
+  width: 100%;
+  height: 50%;
+  padding: 24px 16px;
+    text-align: center;
+
+
+}
+.box-h1-title span{
+  font-size: 30px;
+  font-weight: 600;
+  padding: 8px;
+   color: burlywood;
+}
+span {
+  display: flex;
+  flex-direction: row;
+}
+span:before, span:after{
+  content: "";
+  flex: 0.1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+span:before {
+  margin-right: 10px;
+}
+span:after {
+  margin-left: 10px;
+}
+.h1-title span:hover{
+  color: blanchedalmond;
+  cursor: pointer;
+}
+.nav-title{
+  width: 100%;
+ 
+}
+.nav-title li{
+  display: inline;
+  width: 50%;
+  height: auto;
+  padding: 4px;
+  margin: 10px;
+}
+.nav-title li a{
+  text-decoration: none;
+  color: burlywood;
+  font-size: 24px;
+  font-weight: 300;
+}
+.nav-title li:hover a{
+  cursor: pointer;
+  color: blanchedalmond;
+}
+/* product */
+.content-product{
+  width: 1519px;
+  height: 1530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: burlywood;
+}
+#products{
+  flex-basis: 75%;
+
+  margin-top: 5%;
+  padding: 8px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+
+}
+
+.container{
+ flex-basis: 31%;
+
+  border: 3px solid #000;
+  border-radius: 15px;
+  text-align: center;
+  padding: 4px;
+  gap:10px;
+    background-color: #0e1327;
+    transition: transform 0.3s ease;
+}
+.container:hover{
+  transform: translateY(-5px) scale(1.0);
+  overflow: hidden;
+}
+
+.container img{
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+
+}
+.container h1{
+  color: burlywood;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container p{
+  color: burlywood;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* template2 */
+.blur-product{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 340px;
+  gap: 30px;
+  position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-top: -440px;
+  border-radius: 15px;
+}
+.blur-product i{
+  font-size: 24px;
+  color:burlywood ;
+}
+.blur-product i:hover{
+  color:#000;
+}
+.btn-Buy{
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  color: #000;
+  background-color: burlywood;
+}
+
+.btn-Buy:hover{
+  cursor: pointer;
+  background-color: blanchedalmond;
+  color: burlywood;
+}
+/* cart */
+.cart-yar{
+  
+    max-height: 540px;
+    overflow-y: auto;
+
+}
+.cart-display{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 400px;
+  height: 600px;
+  background-color: #0e1327cf;
+  right: 0;
+  top: 14.2%;
+}
+.cart-display .hr1{
+  border: 2px solid burlywood;
+}
+.cart-display .hr2{
+  border: 2px solid burlywood;
+  margin-top: 595px;
+}
+.view-cart{
+  font-size: 24px;
+  color:burlywood ;
+  cursor: pointer;
+}
+.view-cart:hover{
+  color: blanchedalmond;
+}
+.close-cart{
+  position: absolute;
+  z-index: 998;
+  right: 0;
+  font-size: 24px;
+  padding: 8px 16px;
+  color:burlywood ;
+}
+.close-cart:hover{
+  cursor: pointer;
+  background-color: blanchedalmond;
+}
+.caption{
+  text-align: center;
+  color: burlywood;
+  font-size: 14px;
+}
+table{
+  width:  100%; 
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th{
+border-bottom: 1px solid #000; /* thêm một đường thẳng dưới */
+padding: 8px;
+text-align: center;
+}
+td{
+  color: burlywood;
+padding: 30px 10px 0;
+text-align: center;
+}
+th.cot{
+  color: burlywood;
+}
+td.img{
+width: 200px;
+}
+td.name{
+width: 270px;
+}
+td.price{
+width: 130px;
+}
+td.sl{
+width: 10px;
+}
+td.total, td.delete{
+width: 120px;
+
+}
+/* ảnh cart */
+.img-table {
+  width: 50px;
+  height: 50px;
+ 
+}
+.btn{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+}
+.show-total{
+  width: 50%;
+  height: 100%;
+  background-color: burlywood;
+  color: #000;
+  padding: 16px 16px;
+  text-align: center;
+}
+.btn-Pay{
+  border: none;
+  width: 50%;
+  height: 100%;
+  background-color: burlywood;
+  color: #000;
+  padding: 16px 16px;
+  text-align: center;
+}
+.btn-Pay:hover{
+cursor: pointer;
+color: burlywood;
+background-color: blanchedalmond;
+}
+#quatity{
+  position: absolute;
+  z-index: 9998;
+  background-color: brown;
+}
+/* end cart */
+/* paralax */
+.yar-paralax{
+  width: 100%;
+  height: 100vh;
+}
+.paralax{
+  background-image:url("/assignment/img-slide/ship.jpg");
+  height: 100%;
+  background-attachment: fixed;
+}
+/* footer */
+footer{
+  width: 100%;
+  height: 700px;
+  background-color: #0e1327;
+}
+.map{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+.map p{
+
+  color: burlywood;
+}
+.about{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.yar-about{
+  width: calc(100% / 4);
+  height: 100%;
+  background-color: #0e1327;
+
+}
+.content-footer1{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+
+}
+.content-footer1 h3{
+  padding: 10px;
+  margin: 10px;
+  color: burlywood;
+}
+.nav-info{
+  padding: 10px;
+  margin: 10px;
+}
+.nav-info li{
+  list-style: none;
+  padding: 8px;
+  line-height: 20px;
+}
+.nav-info li a{
+  text-decoration: none;
+  color: burlywood;
+}
+.nav-info li i{
+  padding: 8px;
+}
+
+.yar-about .img-about{
+  width: 50%;
+  height: 50%;
+margin: 80px;
+}
+.design-by{
+  width: 100%;
+  height: 10%;
+
+}
+.design-by hr{
+  border: 1px solid burlywood;
+}
+.nav-footer{
+  margin-top: 30px;
+}
+.nav-footer li{
+  display: inline;
+  gap: 10px;
+  padding: 4px;
+  margin-left: 10px;
+  color: burlywood;
+}
+.input-footer{
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
+  padding-inline: 6px;
+
+}
+.fa-paper-plane{
+  color: #fff;
+  height: 37px;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.social li{
+  display: inline;
+}
+.nav-NH-footer li{
+  display: inline;
+}
+.nav-NH-footer li img{
+  width: 100px;
+  height: 100px;
+}
